@@ -5,17 +5,22 @@
 \usepackage{amsfonts}
 \usepackage{enumitem}
 \usepackage{multirow}
+\usepackage{sidecap}
 \usepackage{graphicx}
+\usepackage{caption}
 \graphicspath{{images/}}
+
+\captionsetup{font=footnotesize}
+
 \begin{document}
-\title{论文初稿}
+\title{Word2Distribution：理论和应用}
 \author{魏浩然}
 \maketitle
 \section{基本介绍}
 \subsection{什么是词嵌入}
-词嵌入(word embedding)，是一种稠密的词的分布表示方式，不同于传统的符号表示和词袋模型(bag of words)利用词-上下文共现矩阵（word-context matrix)的稀疏表示,而是将词汇映射到一个连续的希尔伯特空间进行表示。基于语言学家Zellig Haris的假设“在相近的上下文中出现的词汇具有相近的语义”\cite{harris1954distributional}进行训练，使得相近语义表现为希尔伯特空间中某种度量意义下的接近。
+词嵌入(word embedding)，是一种稠密的词的分布表示方式，不同于传统的符号表示和词袋模型(bag of words)利用词-上下文共现矩阵(word-context matrix)的稀疏表示,而是将词汇映射到一个连续的希尔伯特空间进行表示。基于语言学家Zellig Haris的假设“在相近的上下文中出现的词汇具有相近的语义”\cite{harris1954distributional}进行训练，使得相近语义表现为希尔伯特空间中某种度量意义下的接近。
 
-由于分布式的表示方式易于进行计算，特别是非常适合作为神经网络的输入层，因而被广泛的应用到一系列自然语言处理的具体任务中，包括信息检索\cite{manning2008introduction},问答系统\cite{tellex2003quantitative},主题命名识别\cite{turian2010word}和语义解析\cite{socher2011parsing}等，并取得了非常好的效果。对于词嵌入和更广泛的词表示学习成为这几年的研究热点。
+分布式的表示方式的最大优点是易于进行计算，尤其是非常适合作为神经网络的输入层，因而被广泛的应用到一系列自然语言处理的具体任务中，包括信息检索\cite{manning2008introduction},问答系统\cite{tellex2003quantitative},主题命名识别\cite{turian2010word}和语义解析\cite{socher2011parsing}等，并取得了非常好的效果。随着近几年来深度学习(deep learning)技术在自然语言处理领域得到广泛运用，对于词嵌入和更广泛的词表示学习成为这几年的研究热点。
 
 \subsection{之前的工作}
 之前有大量的关于词嵌入方面的工作，绝大多数是基于向量的表示形式。从方法大致分为显示矩阵分解法、神经网络法和隐式矩阵分解法。
@@ -29,10 +34,10 @@
 &y=b+Wx+Utanh(d+Hx)\\
 &\hat{P}(w_t|w_t-1,...,w_t-n+1)=\frac{e^{y_{w_t}}}{\Sigma_{i}e^{y_i}}
 \end{align*}
-由于输入层采取concentration的方法，以及正则化成概率需要大量的计算，在面对大规模语料的时候效率并不高。
+由于输入层采取concentration的方法处理输入的窗口词表示，对窗口大小的可扩展性较差，并且正则化需要大量的计算，在面对大规模语料的时候效率并不高。后续的工作大多在提高这一框架的性能上展开。
 
 2013年Thomas Mikolov提出了一个更为简单迅速的训练词向量的框架Word2Vec\cite{mikolov2013efficient},采用单层神经网络，通过计算
-$w_i^{\prime{}}w_j$来训练得到条件概率$p(w_i|w_j)$。Word2Vec包括CBOW和skip-gram两种计算方式(图\ref{fig:w2v})，同时也利用了Hierarchical Softmax和Negative Sampling两种快速的正则化方法取代了Bengio的Softmax方法。至此快速获得高质量的词向量成为可能，也使得神经网络在自然语言处理任务中得到普及。随后提出的Glove模型\cite{pennington2014glove}和Swivel模型\cite{shazeer2016swivel}则在Word2Vec的基础上进一步地提升了词向量的训练速度和质量。
+$w_i^{\prime{}}w_j$来训练得到联合概率$p(w_i,w_j)$。Word2Vec包括CBOW和skip-gram两种计算方式(Figure\ \ref{fig:w2v})，同时也利用了Hierarchical Softmax和Negative Sampling两种快速的正则化方法取代了Bengio的Softmax方法。至此快速获得高质量的词向量成为可能，也使得神经网络在自然语言处理任务中得到普及。随后提出的Glove模型\cite{pennington2014glove}和Swivel模型\cite{shazeer2016swivel}则在Word2Vec的基础上进一步地提升了词向量的训练速度和质量。
 \begin{figure}[h]
 \includegraphics[width=\textwidth,height=8cm]{aaa.jpg}
 \caption{CBOW模型和skip-gram模型的大致框架}
@@ -40,14 +45,23 @@ $w_i^{\prime{}}w_j$来训练得到条件概率$p(w_i|w_j)$。Word2Vec包括CBOW�
 \label{fig:w2v}
 \end{figure}
 
-上述两类取得词向量的方法在语料足够大的情况下在得到词向量的质量上并没有绝对的优劣。2014年Omer Levy等人更是证明了两类方法在数学上的统一性\cite{levy2014neural},即Word2Vec中的SGNG(Skip-Gram with Negative Sampling)等价于分解word-context的PPMI矩阵。随后在O.Levy于TACL发表的\cite{levy2015improving}一文中总结了目前位置常用的训练词嵌入的方法，将Word2Vec模型、Glove模型划分为了隐式矩阵分解方法（Implicit Matrix Decomposition Methods），并通过大量的实验认为对于模型中超参数的调整，上述两种矩阵分解模型的优劣很小，对于参数的控制要重于对模型架构和优化算法的研究。至此词向量分布的研究基本上趋于完整。
+大量的实验表明，上述两类取得词向量的方法在语料足够大的情况下在得到词向量的质量上并没有绝对的优劣。2014年Omer Levy等人更是证明了两类方法在数学上的统一性\cite{levy2014neural},即Word2Vec中的SGNG(Skip-Gram with Negative Sampling)等价于分解word-context的PPMI矩阵。随后在O.Levy于TACL发表的\cite{levy2015improving}一文中总结了目前位置常用的训练词嵌入的方法，将Word2Vec模型、Glove模型划分为了隐式矩阵分解方法（Implicit Matrix Decomposition Methods），并通过大量的对照实验，认为相比模型中超参数的调整，上述两种矩阵分解模型的优劣很小，对于参数的控制要重于对模型架构和优化算法的研究。
+
+此后的工作更多地专项词向量的细化工作，比如词向量可解释性的研究，在词向量的训练中引入语言学的一些数据集和监督学习的方法，非英语的词向量研究(比如运用在汉语和日语上的词向量)等。
 
 \subsection{本文的工作}
-从之前的工作中可以看出，词的向量表示已经得到了充分的研究并得到广泛应用。然而单纯从表示方式上来说，词的向量表示也存在一些不足：1.只用向量空间中的一个点表示词，会造成相当的语义损失，实际上各国语言的词汇中都普遍存在一词多义的现象，向量表示并不能刻画这种不确定性。2.词向量的度量方式比较单一，不论是欧氏距离还是余弦距离，只能用来刻画语义的接近程度，对于语言学中其他语义关系，诸如上下位词(hypernym-hyponym)的刻画比较无力。因而最近关于词的分布式表示的研究，有许多致力于建立更具有语言学解释性，能够包含更多人工抽象的词汇信息(fine-grained lexical resources)的表示模型。\\
+从之前的工作中可以看出，词的向量表示已经得到了比较成熟的研究，并取得了广泛应用。然而单纯从表示方式上来说，词的向量表示也存在一些不足：1.只用向量空间中的一个点表示词，会造成相当的语义损失，实际上各国语言的词汇中都普遍存在一词多义的现象，向量表示并不能刻画这种不确定性。2.词向量的度量方式比较单一，不论是欧氏距离还是余弦距离，只能用来刻画语义的接近程度，对于语言学中其他语义关系，诸如上下位词(hypernym-hyponym)的刻画比较无力。因而最近关于词的分布式表示的研究，有许多致力于建立更具有语言学解释性，能够包含更多人工抽象的词汇信息(fine-grained lexical resources)的表示模型。
 
-Luke Vilins等人在ICLR 2015中发表的Word Representation Via Gaussian Embedding\cite{vilnis2014word}文章中，提出了一种新的词的分布表示的形式----不同以往的词向量表示，而是试图将词表示成一种特定的分布(以下简称词分布)。词分布通过通常含有一组参数表示分布的均值，这包含了词向量所涵盖的信息。此外，通过模型学习到的分布的其他参数，诸如方差等，提供了词的其他语义信息，诸如词义的不确定程度等，可以作为新的特征运用在具体的自然语言处理任务中。\\
+Luke Vilins等人在ICLR 2015中发表的Word Representation Via Gaussian Embedding\cite{vilnis2014word}文章中，提出了一种新的词的分布表示的形式---不同以往的词向量表示，而是试图将词表示成一种特定的分布(以下简称词分布)。词分布通过通常含有一组参数表示分布的均值，这包含了词向量所涵盖的信息。此外，通过模型学习到的分布的其他参数，诸如方差等，提供了词的其他语义信息，诸如词义的不确定程度等，可以作为新的特征运用在具体的自然语言处理任务中。(Figure\ \ref{fig:w2d})
 
-本文便是基于Vilins等人的会议文章上，对于词分布这种表示方式进行更详细的讨论和实验。\\
+\begin{SCfigure}
+	\includegraphics[width=0.7\textwidth]{word2gauss_illustrate.png}
+	\caption{词分布的示意图。这里选取的是选择高斯分布对词进行表示的情况。本图表现出了这种表示的两个特点：具有相近词义的分布的均值比较接近；词频较大和词义较宽泛的协方差较大。}
+	\centering
+	\label{fig:w2d}
+\end{SCfigure}
+
+然而囿于篇幅，Vilins等人的文章对于词分布的讨论并不是非常充分，除了他们在future work的环节提出的一些待探索的课题同时，也比较缺乏充分的实验探究。本文正是基于这些问题对词分布这一新颖的表示方式做更深入的讨论。本文的工作将分成三个部分。第一部分针对原文中对于“还有那些分布可以用于表示”尝试作出一些回答，并指出原文中作者设想的student's\ t分布并非是一个很好的选择。第二部分是对于词分布模型在词的相似度等实验上的表现，特别指出了一些超参数的选择会极大影响实验的结果。第三部分则针对原文作者提出的对于非对称关系学习的实验上的补充，并指出原文作者设想的学习这种关系的方法的效果不佳，最后给出自己的修改过的模型和学习策略。
 
 \section{Main part}
 \subsection{Theory}
@@ -55,9 +69,9 @@ Luke Vilins等人在ICLR 2015中发表的Word Representation Via Gaussian Embedd
 。通过设定窗口(window)的大小(记为$i$)，对于语料中位置为$n$的词$w_n$，我们把$w_n-i,...,w_n-1,w_n+1,...,w_n+i$称
 作上下文词，把所有上下文词的几何记为$\mathcal{C}$，该集合中的每一个词记为$c$，显然$c\in\mathcal{C}$
 。一般情况下，我们有$\mathcal{C}\subseteq\mathcal{D}$。对于下文中关于单词和上下文词的表示，我们同样分别以
-$w$和$c$来表示以简化表达。\\
+$w$和$c$来表示以简化表达。
 
-对于一个单词-上文词对样本$(w_i,c_j)$，我们把$c_j$在语料中出现在$w_i$的窗口词对样本称为正样本(positive)，反之则称为负样本(negative)。考虑到各种词对样本出现的频率差异很大，单纯的二分类问题并不能很好的建立模型，为此我们引进能量函数(energy function)来给词对样本打分。\\
+对于一个单词-上文词对样本$(w_i,c_j)$，我们把$c_j$在语料中出现在$w_i$的窗口词对样本称为正样本(positive)，反之则称为负样本(negative)。考虑到各种词对样本出现的频率差异很大，单纯的二分类问题并不能很好的建立模型，为此我们引进能量函数(energy function)来给词对样本打分。
 
 设输入为$x$，输出为$y$，我们定义能量函数为$E_\theta(x,y)$，其中$\theta$为能量函数的参数。能量函数只取非负值，其值越大，则意味着该样
 本$(x,y)$更“正”，在训练词分布的模型中，即意味着词对样本在语料中出现的概率更大。通过对模型的目标函数进行优化，学习得到的参数$\theta$，即为$x$和$y$的分布表示。以Word2Vec的SGNS模型为例，其优化的能量函
@@ -68,12 +82,11 @@ E(w,c)=\sigma(w^{\prime{}}c)\cdot\prod_k\sigma(w^{\prime{}}c_N^k)
 
 其中$\sigma(x)=\frac{1}{1+e^(-x)}$为sigmoid函数，便可以看做以sigmoid函数作为其能量函数。
 为了很好的区分正样本和负样本，我们考虑引入排序损失函数(ranking loss function)。设$\mathcal{L}(w,c,c_n)=max(0,\varepsilon-E(w,c)+E(w,c_n))$,$\varepsilon$为正样
-本和负样本的一个边界(margin)。当$\varepsilon-E(w,c)+E(w,c_n)>0$即$E(w,c)-E(w,c_n)>m$时小损失函数，从而使得$E(w,c)$和$E(w,c_n)$的差值大于$\varepsilon$。\\
+本和负样本的一个边界(margin)。当$\varepsilon-E(w,c)+E(w,c_n)>0$即$E(w,c)-E(w,c_n)>m$时小损失函数，从而使得$E(w,c)$和$E(w,c_n)$的差值大于$\varepsilon$。
 
-同于以往以向量为基础的词分布表示，本文讨论的模型希望将词表示为一个特定的分布，因而分布的选取和能量函数的选择是一个重要的问题。Vilins等在ICLR15的文章中，分别选择了高斯分布以及概率乘积核(probability product kernel)和KL散度(Kullback-Leibler divergence)进行建模（以下分别简称为IP能量函数和KL能量函数）。\\
+同于以往以向量为基础的词分布表示，本文讨论的模型希望将词表示为一个特定的分布，因而分布的选取和能量函数的选择是一个重要的问题。Vilins等在ICLR15的文章中，分别选择了高斯分布以及概率乘积核(probability product kernel)和KL散度(Kullback-Leibler divergence)进行建模（以下分别简称为IP能量函数和KL能量函数）。
 
 对任何一个词$w$，用一个高斯分布$\mathcal{N}(\mu_w,\Sigma_w)$进行表示。对于IP能量函数，有：
-
 \begin{align*}
 E(w,c)&=D_KL(\mathcal{N}_w||\mathcal{N}_c)\\
 &=\frac{1}{2}(tr(\Sigma_c^{-1}\Sigma_w)+(\mu_c-\mu_w)^{\prime{}}\Sigma_c^{-1}(\mu_c-\mu_w))-d+ln(\frac{det(\Sigma_c)}{det(\Sigma_w)})
@@ -85,7 +98,7 @@ E(w,c)&=D_KL(\mathcal{N}_w||\mathcal{N}_c)\\
 \end{align*}
 其中$d$为$\mu$的维度。可以看到由于高斯分布良好的性质，两种能量函数都能够得到封闭解(close form)。那么是否存在其他良好的分布函数，适合用作词的向量表示？Vilins在其ICLR15的工作的future work一节曾经提到过可以尝试使用其他分布进行尝试，比如Student’s t。为此我们将针对一些常见的分布进行讨论，
 特别要提出的是，分布的选择，以及能量函数的选择对于词的表示效果的影响是比较难以预测的。
-处于实用性而言我们更倾向与选择易于计算的组合，但理论上的一些讨论依然是值得尝试的事情。\\
+处于实用性而言我们更倾向与选择易于计算的组合，但理论上的一些讨论依然是值得尝试的事情。
 
 首先我们讨论一般椭圆分布(general elliptical distribution)的情况。我们采取\cite{gomez2003survey}中给出的定义，只考虑一类具有解析形式的密度函数的椭圆分布。设$E(\mu,\Sigma,g)$为椭圆分布，且具有密度函数$f(x)$如下：
 \begin{align*}
@@ -114,7 +127,7 @@ g_1\otimes g_2(0)&= \int_{-\infty}^{\infty} g_1(t)g_2(-t)dt
 对于高斯分布而言，考虑到其在卷积下的不变性质（两个高斯分布的卷积依然是高斯分布），可以通过提取高斯核的技巧求解出解析解。然而对于一般的椭圆分布而言，这一点很难得到保证（常见的另一个性质优良的---线性核由于$g$的可积性并不可取）。
 以原文章中提到的Student's T分布为例，其$g(t)=(1+\frac{x^2}{v})^{-\frac{v+1}{2}}$。关于t分布的卷积计算
 \cite{nadarajah2005convolutions}给出了一个可用的结论：当$v_1$和$v_2$皆为奇数时存在解析解，否则不存在解析解。此外，选取t分布作为模型中对词的表示还会引起IP能量函数
-的导数难以求解，提高了模型训练的难度，因而高斯分布可以说是一个非常好的选择。\\
+的导数难以求解，提高了模型训练的难度，因而高斯分布可以说是一个非常好的选择。
 
 另外一系列常用的分布是指数族分布(exponential family distribution)。指数族分布的密度函数表现为如下形式：
 \begin{align*}
@@ -132,7 +145,7 @@ k(x,x^{\prime{}})&=\int_x p_\theta(x)^{\frac{1}{2}} p_{\theta^{\prime{}}}(x)^{\f
 &=exp(\mathcal{K}(\frac{\theta}{2}+\frac{\theta^{\prime{}}}{2})-\frac{1}{2}\mathcal{K}(\theta)-\frac{1}{2}\mathcal{K}(\theta)-\frac{1}{2}\mathcal{K}(\theta^{\prime{}})) 
 \end{align*}
 对于$\gamma=\frac{1}{2}$时，$k(x,x^{\prime{}})$被称作巴特查里亚距离（Bhattacharyya distance）。巴氏距离同样
-可以表示两个分布的相似程度，其与IP能量函数孰优孰劣本文不做展开讨论。\\
+可以表示两个分布的相似程度，其与IP能量函数孰优孰劣本文不做展开讨论。
 
 \cite{jordan2003introduction}对于指数族分布的KL散度的计算做出了讨论：
 \begin{align*}

@@ -1,0 +1,1525 @@
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.5.14)  14 MAY 2016 20:48
+entering extended mode
+**cover.tex
+(E:\Bachelor_thesis-master\bthesis\body\cover.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+Invalid UTF-8 byte or sequence at line 2 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 2 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 2 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 2 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 2 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 2 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 2 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 2 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 2 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 2 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 5 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 5 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 5 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 5 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 5 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 5 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 5 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 5 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 7 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 7 replaced by U+FFFD.
+! Undefined control sequence.
+l.7 \cdepart
+            {��ѧϵ}                      %Ժϵ
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \cdepart{�
+                �ѧϵ}                      %Ժϵ
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ѧ in font nullfont!
+Missing character: There is no ϵ in font nullfont!
+Invalid UTF-8 byte or sequence at line 8 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 8 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 8 replaced by U+FFFD.
+! Undefined control sequence.
+l.8 \csubject
+             {»�´¡��ѧ}                   %רҵ
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no » in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ´ in font nullfont!
+Missing character: There is no ¡ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ѧ in font nullfont!
+Invalid UTF-8 byte or sequence at line 9 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 9 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 9 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 9 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 9 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 9 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 9 replaced by U+FFFD.
+! Undefined control sequence.
+l.9 \ctitle
+           {~Gamma~º¯��µ�~Stirling~¼¶��}       %��Ŀ
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no G in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no ¯ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no ¼ in font nullfont!
+Missing character: There is no ¶ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Invalid UTF-8 byte or sequence at line 10 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 10 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 10 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 10 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 10 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 10 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 10 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 10 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+! Undefined control sequence.
+l.11 \cauthor
+             {³�~��~�}                        %����
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ³ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Invalid UTF-8 byte or sequence at line 12 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 12 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 12 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 12 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 12 replaced by U+FFFD.
+! Undefined control sequence.
+l.12 \csupervisor
+                 {÷~¼�~ǿ}          %µ¼ʦ����
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no ¼ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ǿ in font nullfont!
+Invalid UTF-8 byte or sequence at line 13 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 13 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 13 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 13 replaced by U+FFFD.
+! Undefined control sequence.
+l.13 \stitle
+            {¸±~½�~��}               %ְ³�
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ¸ in font nullfont!
+Missing character: There is no ± in font nullfont!
+Missing character: There is no ½ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 14 replaced by U+FFFD.
+! Undefined control sequence.
+l.14 \cdate
+           {¶������������}                  %��...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ¶ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 7--15
+[]
+ []
+
+Invalid UTF-8 byte or sequence at line 16 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 16 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 16 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 16 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 16 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 16 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 18 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 18 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 18 replaced by U+FFFD.
+! Undefined control sequence.
+l.18 \etitle
+            {~Stirling~Series~of~Gamma~Function~}%±���
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \etitle{~
+              Stirling~Series~of~Gamma~Function~}%±���
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+! Undefined control sequence.
+l.19 \edegree
+             {Bachelor of Science}          % ѧλ
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.20 \edepart
+             {Department of Mathematics}    %Ժϵ
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+! Undefined control sequence.
+l.21 \esubject
+              {Pure Mathematics}                % רҵ
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+Invalid UTF-8 byte or sequence at line 22 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 22 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 22 replaced by U+FFFD.
+! Undefined control sequence.
+l.22 \edirection
+                {Mathematical analysis }         % �о¿·½��
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Invalid UTF-8 byte or sequence at line 23 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 23 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 23 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 23 replaced by U+FFFD.
+! Undefined control sequence.
+l.23 \eauthor
+             {Chen Tianpang}              % ����
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Invalid UTF-8 byte or sequence at line 24 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 24 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 24 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 24 replaced by U+FFFD.
+! Undefined control sequence.
+l.24 \esupervisor
+                 {Professor Mei JiaQiang}      % µ¼ʦ����
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no Q in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+! Undefined control sequence.
+l.25 \estitle
+             {Associate Professor}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Invalid UTF-8 byte or sequence at line 26 replaced by U+FFFD.
+! Undefined control sequence.
+l.26 \eaddress
+              {Department of Mathematics, Nanjing University}     % Ӣ�ĵ¥λ
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no U in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Invalid UTF-8 byte or sequence at line 27 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 27 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 27 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 27 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 27 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 27 replaced by U+FFFD.
+! Undefined control sequence.
+l.27 \edate
+           {May, 2009}                              % Ӣ������
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 18--28
+[]                               
+ []
+
+Invalid UTF-8 byte or sequence at line 29 replaced by U+FFFD.
+! Undefined control sequence.
+l.29 \ngrade
+            {2005}                                  % �꼶
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \ngrade{2
+              005}                                  % �꼶
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Invalid UTF-8 byte or sequence at line 30 replaced by U+FFFD.
+! Undefined control sequence.
+l.30 \snumber
+             {051110011}                           % ѧº�
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 29--31
+[]
+ []
+
+Invalid UTF-8 byte or sequence at line 32 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 32 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 32 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 32 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 33 replaced by U+FFFD.
+! Undefined control sequence.
+l.33 \cabstract
+               {¹���N!µ�~Stirling~½¥½�ʽ�ڷ���͸��...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \cabstract{¹
+                  ���N!µ�~Stirling~½¥½�ʽ�ڷ���͸��...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ¹ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no ½ in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no ½ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ʽ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ڷ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ͸ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no к in font nullfont!
+Missing character: There is no ܴ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ۼ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ֵ in font nullfont!
+Missing character: There is no , in font nullfont!
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 34 replaced by U+FFFD.
+Missing character: There is no ² in font nullfont!
+Missing character: There is no ¢ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ͨ in font nullfont!
+Missing character: There is no ¹ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ¿ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no Ե in font nullfont!
+Missing character: There is no ó in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no һ in font nullfont!
+Missing character: There is no Щ in font nullfont!
+Missing character: There is no ¾ in font nullfont!
+Missing character: There is no « in font nullfont!
+Missing character: There is no ȷ in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ֵ in font nullfont!
+Missing character: There is no ¼ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ± in font nullfont!
+Missing character: There is no ¾ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ĵ in font nullfont!
+Missing character: There is no Ľ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no Ӧ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ͨ in font nullfont!
+Missing character: There is no ¹ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ¹ in font nullfont!
+Missing character: There is no « in font nullfont!
+Missing character: There is no ʽ in font nullfont!
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+Missing character: There is no ¸ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ³ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no ¹ in font nullfont!
+Missing character: There is no « in font nullfont!
+Missing character: There is no ʽ in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ² in font nullfont!
+Missing character: There is no ¢ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no ¯ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ʺ in font nullfont!
+Missing character: There is no ͺ in font nullfont!
+Missing character: There is no ¯ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no ĵ in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no Ը in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ³ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no ¯ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no ¹ in font nullfont!
+Missing character: There is no « in font nullfont!
+Missing character: There is no ʽ in font nullfont!
+Missing character: There is no . in font nullfont!
+Invalid UTF-8 byte or sequence at line 36 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 36 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 36 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 36 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 36 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 36 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 36 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 36 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 36 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 36 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 36 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 36 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 36 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 36 replaced by U+FFFD.
+Missing character: There is no � in font nullfont!
+Missing character: There is no ڴ in font nullfont!
+Missing character: There is no ˹ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ³ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no õ in font nullfont!
+Missing character: There is no ½ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no ¶ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no ʽ in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 33--37
+[]                       
+ []
+
+Invalid UTF-8 byte or sequence at line 38 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 38 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 38 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 38 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 38 replaced by U+FFFD.
+! Undefined control sequence.
+l.38 \ckeywords
+               {½׳�,~Bernoulli~��,~Stirling~¹«ʽ,~$\Gamma$~º¯�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 \ckeywords{½
+                  ׳�,~Bernoulli~��,~Stirling~¹«ʽ,~$\Gamma$~º¯�...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ½ in font nullfont!
+Missing character: There is no ׳ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no ¹ in font nullfont!
+Missing character: There is no « in font nullfont!
+Missing character: There is no ʽ in font nullfont!
+Missing character: There is no , in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 38.
+Missing character: There is no º in font nullfont!
+Missing character: There is no ¯ in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (26.25002pt too wide) in paragraph at lines 38--39
+[]     $\OT1/cmr/m/n/10 ^^@$  
+ []
+
+Invalid UTF-8 byte or sequence at line 42 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 42 replaced by U+FFFD.
+! Undefined control sequence.
+l.43 \eabstract
+               {On the Asymptotic analysis and probability theory, The Stirl...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 \eabstract{O
+                 n the Asymptotic analysis and probability theory, The Stirl...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no O in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 43--48
+[]
+ []
+
+! Undefined control sequence.
+l.50 \ekeywords
+               {Factorial,~Bernoulli~Numbers,~Stirling~Formula,~$\Gamma$~fun...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \ekeywords{F
+                 actorial,~Bernoulli~Numbers,~Stirling~Formula,~$\Gamma$~fun...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no F in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (26.25002pt too wide) in paragraph at lines 50--51
+[]     $\OT1/cmr/m/n/10 ^^@$  
+ []
+
+! Undefined control sequence.
+l.52 \makecover
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+! Emergency stop.
+<*> cover.tex
+             
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 7 strings out of 430478
+ 104 string characters out of 3191502
+ 45928 words of memory out of 3000000
+ 3237 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 18i,1n,12p,117b,58s stack positions out of 5000i,500n,10000p,200000b,50000s
+No pages of output.

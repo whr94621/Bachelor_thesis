@@ -1,0 +1,150 @@
+\chapter{Gamma~函数的~Stirling 级数}
+\label{chap01}
+
+Gamma 函数的~Stirling 公式是~$n!$ 的~Stirling 公式的推广. 本章主要运用~Gamma 函数的性质以及函数的单调性进行推导.
+Gamma 函数的性质请参阅~$\textbf{附录B}$.
+
+对于正整数的阶乘, 我们有~Stirling 公式作为渐近表示:
+$$
+n!=\sqrt{2\pi~n}(\frac{n}{e})^ne^{\delta_n}, ~~\delta_n=\frac{1}{12n}+\cdots.
+$$
+将~$\Gamma(s)$ 视为阶乘的推广, 我们来推导类似的渐近表示.
+
+\textbf{引理1}:~~$\Gamma(s)=\sqrt{2\pi}s^{s-\frac{1}{2}}e^{-s}e^{\mu(s)}$, $(s>~0)$, 其中~$\lim\limits_{s\to\infty}\mu(s)=0.$
+
+\textbf{证明}: 令
+$$
+r(s)=\ln\frac{\Gamma(s)e^s}{\sqrt{2\pi}s^{s-1/2}}=\ln\Gamma(s)+s-(s-1/2)\ln{s}-\ln{\sqrt{2\pi}},
+$$
+记~$g(s)=r(s)-r(s+1)$, 利用递推公式~$\Gamma(s+1)=s\Gamma(s)$ 得
+$$
+g(s)=(s+\frac{1}{2})\ln{(1+\frac{1}{s})}-1.
+$$
+$g(s)$ 是~$(0,+\infty)$ 上的凸函数:
+$$
+g''(s)=\frac{1}{2s^2(s+1)^2}>0.
+$$
+由~Taylor 展开
+$$
+\ln{\frac{1+t}{1-t}}=2(\frac{t}{1}+\frac{t^3}{3}+\frac{t^5}{5}+\cdots)~~~(\mid~t\mid~<1)
+$$
+中代入~$t=(2s+1)^{-1}$ 得
+$$
+g(s)=\frac{1}{3(2s+1)^2}+\frac{1}{5(2s+1)^4}+\frac{1}{7(2s+1)^6}+\cdots,
+$$
+由此得到以下估计
+$$
+0<g(s)<\frac{1}{3(2s+1)^2}[1+\frac{1}{(2s+1)^2}+\frac{1}{(2s+1)^4}+\cdots]=\frac{1}{12s(s+1)}.
+$$
+记~$\mu(s)-\sum_{n=0}^\infty~g(s+n)$, 则上式表明~$\mu(s)$ 在~$(0,+\infty)$ 中内闭一致收敛, 且
+$$
+0<g(s)<\frac{1}{12}\sum_{n=0}^\infty(\frac{1}{s+n}-\frac{1}{s+n+1})=\frac{1}{12s}.
+$$
+因为~$g(s)$ 为凸函数, 故~$\mu(s)$ 也是凸函数, 根据定义,
+$$
+\mu(1)=\sum_{n=1}^\infty~g(n)=\sum_{n=1}^\infty[r(n)-r(n+1)]=r(1)=1-\ln{\sqrt{2\pi}}.
+$$
+其中~$\lim\limits_{n\to\infty}r(n)=\lim\limits_{n\to\infty}\delta_n=0$ 是因为我们已经有了阶乘的~Stirling 公式.
+记~$f(s)=\sqrt{2\pi}s^{s-\frac{1}{2}}e^{-s}e^{\mu(s)}$, 要证明引理，只需验证~$f(s)$ 满足~$\textbf{定理B.1}$ (
+Bohr-Mollerup) 的三个条件即可. 首先有
+$$
+\frac{f(s+1)}{f(s)}=(1+\frac{1}{s})^{s+\frac{1}{2}}se^{-1}e^{-g(s)}=s,
+$$
+这说明~$f$ 满足第一个条件. 第二个条件:
+$$
+f(1)=\sqrt{2\pi}e^{-1}e^{\mu(1)}=1.
+$$
+第三个条件:
+$$
+\ln{f(s)}=\ln{\sqrt{2\pi}}+(s-1/2)\ln{s}-s+\mu(s),
+$$
+这是凸函数的和, 因此~$\ln f$ 是凸函数. 根据\textbf{定理B.1} 我们就证明了引理.
+
+\textbf{引理2}:~$\textbf{引理1}$ 中的~$\mu(s)$ 是单调递减趋于~$0$ 的.
+
+\textbf{证明}:由~$\textbf{附录B}$ 中的~$\textbf{定理B.2}$ 知
+$$
+\ln{\Gamma(s)}=-\gamma~s-\ln{s}-\sum_{n=1}^\infty[s/n-\ln{(1+s/n)}],
+$$
+逐项求导, 得
+$$
+(\ln{\Gamma(s)})'=-\gamma-\frac{1}{s}-\sum_{n=1}^\infty[\frac{1}{n}-\frac{1}{s+n}],
+$$
+这个级数在~$(0,~+\infty)$ 中内闭一致收敛, 因此逐项求导是可行的. 利用~Euler 常数的定义, 有
+\begin{align}
+(\ln{\Gamma(s)})' & =\lim_{n\to\infty}[\ln{n}-\sum_{k=1}^n\frac{1}{k}]-\frac{1}{s}- \lim_{n\to\infty}\sum_{k=1}^n[\frac{1}{k}-\frac{1}{s+k}] \nonumber\\
+                  & =\lim_{n\to\infty}[\ln{n}-\sum_{k=1}^n\frac{1}{s+k}]-\frac{1}{s}.\nonumber
+\end{align}
+因为~$\psi(t)=\frac{1}{t+s}$ 是凸函数, 故
+$$
+\int_k^{k+1}\frac{dt}{t+s}<\frac{1}{2}[\frac{1}{t+s+k}+\frac{1}{t+s+k+1}], ~~k\ge~0.
+$$
+因此有
+$$
+\frac{1}{2}\frac{1}{s}+\frac{1}{s+1}+\cdots+\frac{1}{s+n}+\frac{1}{2}\frac{1}{s+n+1}>
+\sum_{k=0}^{n+1}\int_k^{k+1}\frac{dt}{t+s}=\ln(s+n+1)-\ln{s},
+$$
+这说明
+$$
+(\ln{\Gamma(s)})'~\le\lim_{n\to\infty}[\ln{n}-\ln(s+n+1)+\ln{s}+\frac{1}{2s}+\frac{1}{2(s+n+1)}]-\frac{1}{s}=\ln{s}-\frac{1}{2s},
+$$
+从而
+$$
+\gamma'(s)=(\ln{\Gamma(s)})'+1-\ln{s}-(s-\frac{1}{2})\frac{1}{s}\le~0.
+$$
+于是说明~$\gamma(s)$ 是单调递减的. 由~$\textbf{引理1}$ 知~$\gamma(s)=\mu(s)$, 即引理得证.
+
+由~$\textbf{引理1}$ 和~$\textbf{引理2}$ 可知
+$$
+\mu(s)=\ln{(\frac{\Gamma(s)e^s}{\sqrt{2\pi}s^{s-\frac{1}{2}}})},~~s>0, ~~\lim_{s\rightarrow\infty}\mu(s)=0.
+$$
+且~$\mu(s)$ 是单调递减的趋于~$0$.
+
+我们现在要像第二章中对~$\delta_n$ 估计一样, 对~$\mu(s)$ 进行确切的估计. 事实上, 我们可以证明:
+\begin{equation}
+\mu(s)~\simeq\frac{1}{12s}-\frac{1}{360s^3}+\frac{1}{1260s^5}-\frac{1}{1680s^7}+\frac{1}{1188s^9}-\cdots, ~~\forall~s>0.
+\end{equation}
+上面的系数是第二章~$(2.7)$~中的系数. 上式等价于对~$s>0$ 有
+\begin{eqnarray}
+0<\mu(s)~&<&\frac{1}{12s},\\
+\frac{1}{12s}-\frac{1}{360s^3}&<&\mu(s)<\frac{1}{12s},\\
+\frac{1}{12s}-\frac{1}{360s^3}&<&\mu(s)<\frac{1}{12s}-\frac{1}{360s^3}+\frac{1}{1260s^5},\\
+\cdots~&<&~\cdots.\nonumber
+\end{eqnarray}\\
+对于~$\forall$ $s_0>0$ 令
+$$
+\rho_n(s_0)~=\rho(s_0+n)~~~~(n=~0,1,2,\cdots)
+$$
+由~$\textbf{引理1}$, 可知序列~${\rho_n(s_0)}$~趋向于~$0$. 让该序列递减, 只须
+$$
+\rho_{n+1}(s_0)-\rho_n(s_0)=1-(s_0+n+\frac{1}{2})\ln{(a+\frac{1}{s_0+n})}<0,~~~\forall~n>0.
+$$
+只须
+$$
+f(x)=\ln(1+\frac{1}{s_0+x})-\frac{1}{s_0+x+\frac{1}{2}}>0~~~\forall~x>0.
+$$
+这是显然的. 因为~$\lim\limits_{x\rightarrow\infty}f(x)=0$ 且
+$$
+f'(x)=-\frac{1}{(s_0+x)(s_0+x+1)(2s_0+2x+1)^2}<0,~~~\forall~x>0.
+$$
+故序列~${\rho_n(s_0)}$ 递减趋向于~$0$. 由于~$s_0$ 是任意的, 故~$\mu(s)>0,~~(s>0)$ 成立.
+
+\textbf{(注意：我们的证明过程并没有用到~$\mu(s)$ 是递减趋于~$0$~的, 只是用到构造的序列是递减的).}
+
+下面我们来证明~$(1.2)$ 式的成立. $\forall~s_0>0$ 依照~$\textbf{第二章}$ 的~$\textbf{第一步}$ 我们只须令
+$$
+\alpha_n(s_0)=\gamma(s_0+n)-\frac{A}{s_0+n}~~~(n=0,1,2,\cdots).
+$$
+寻找使序列~${\alpha_n(s_0)}$ 递增的~$A$~的值. 仿照~$\textbf{第二章}$ 过程做下去，就会得到式子~$(1.2)$, 依次做下去就会得到式子
+~$(1.3)$, $(1.4)$ 进而得到~$\mu(s)$ 的估计式:
+\begin{equation}
+\mu(s)~\simeq\frac{1}{12s}-\frac{1}{360s^3}+\frac{1}{1260s^5}-\frac{1}{1680s^7}+\frac{1}{1188s^9}-\cdots,~~\forall~s>0.
+\end{equation}
+故~Gamma 函数的~Stirling 级数为:
+$$
+\Gamma(s)=\sqrt{2\pi}s^{s-\frac{1}{2}}e^{-s}e^{\mu(s)},
+$$
+其中
+$$
+\mu(s)~\simeq\frac{1}{12s}-\frac{1}{360s^3}+\frac{1}{1260s^5}-\frac{1}{1680s^7}+\frac{1}{1188s^9}-\cdots.
+$$
