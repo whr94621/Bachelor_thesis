@@ -1,0 +1,114 @@
+\begin{thebibliography}{10}
+
+\bibitem{bengio2006neural}
+Yoshua Bengio, Holger Schwenk, Jean-S{\'e}bastien Sen{\'e}cal, Fr{\'e}deric
+  Morin, and Jean-Luc Gauvain.
+\newblock Neural probabilistic language models.
+\newblock In {\em Innovations in Machine Learning}, pages 137--186. Springer,
+  2006.
+
+\bibitem{gomez2003survey}
+Eusebio G{\'o}mez, Miguel~A G{\'o}mez-Villegas, and J~Miguel Mar{\'\i}n.
+\newblock A survey on continuous elliptical vector distributions.
+\newblock {\em Revista matem{\'a}tica complutense}, 16(1):345--361, 2003.
+
+\bibitem{harris1954distributional}
+Zellig~S Harris.
+\newblock Distributional structure.
+\newblock {\em Word}, 10(2-3):146--162, 1954.
+
+\bibitem{he2015learning}
+Shizhu He, Kang Liu, Guoliang Ji, and Jun Zhao.
+\newblock Learning to represent knowledge graphs with gaussian embedding.
+\newblock In {\em Proceedings of the 24th ACM International on Conference on
+  Information and Knowledge Management}, pages 623--632. ACM, 2015.
+
+\bibitem{jebara2004probability}
+Tony Jebara, Risi Kondor, and Andrew Howard.
+\newblock Probability product kernels.
+\newblock {\em The Journal of Machine Learning Research}, 5:819--844, 2004.
+
+\bibitem{jordan2003introduction}
+Michael~I Jordan.
+\newblock An introduction to probabilistic graphical models, 2003.
+
+\bibitem{lebret2013word}
+R{\'e}mi Lebret and Ronan Collobert.
+\newblock Word emdeddings through hellinger pca.
+\newblock {\em arXiv preprint arXiv:1312.5542}, 2013.
+
+\bibitem{levy2014neural}
+Omer Levy and Yoav Goldberg.
+\newblock Neural word embedding as implicit matrix factorization.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  2177--2185, 2014.
+
+\bibitem{levy2015improving}
+Omer Levy, Yoav Goldberg, and Ido Dagan.
+\newblock Improving distributional similarity with lessons learned from word
+  embeddings.
+\newblock {\em Transactions of the Association for Computational Linguistics},
+  3:211--225, 2015.
+
+\bibitem{lund1996producing}
+Kevin Lund and Curt Burgess.
+\newblock Producing high-dimensional semantic spaces from lexical
+  co-occurrence.
+\newblock {\em Behavior Research Methods, Instruments, \& Computers},
+  28(2):203--208, 1996.
+
+\bibitem{manning2008introduction}
+Christopher~D Manning, Prabhakar Raghavan, Hinrich Sch{\"u}tze, et~al.
+\newblock {\em Introduction to information retrieval}, volume~1.
+\newblock Cambridge university press Cambridge, 2008.
+
+\bibitem{mikolov2013efficient}
+Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
+\newblock Efficient estimation of word representations in vector space.
+\newblock {\em arXiv preprint arXiv:1301.3781}, 2013.
+
+\bibitem{nadarajah2005convolutions}
+S~Nadarajah and DK~Dey.
+\newblock Convolutions of the t distribution.
+\newblock {\em Computers \& Mathematics with Applications}, 49(5):715--721,
+  2005.
+
+\bibitem{pennington2014glove}
+Jeffrey Pennington, Richard Socher, and Christopher~D Manning.
+\newblock Glove: Global vectors for word representation.
+\newblock In {\em EMNLP}, volume~14, pages 1532--1543, 2014.
+
+\bibitem{shazeer2016swivel}
+Noam Shazeer, Ryan Doherty, Colin Evans, and Chris Waterson.
+\newblock Swivel: Improving embeddings by noticing what's missing.
+\newblock {\em arXiv preprint arXiv:1602.02215}, 2016.
+
+\bibitem{socher2011parsing}
+Richard Socher, Cliff~C Lin, Chris Manning, and Andrew~Y Ng.
+\newblock Parsing natural scenes and natural language with recursive neural
+  networks.
+\newblock In {\em Proceedings of the 28th international conference on machine
+  learning (ICML-11)}, pages 129--136, 2011.
+
+\bibitem{tellex2003quantitative}
+Stefanie Tellex, Boris Katz, Jimmy Lin, Aaron Fernandes, and Gregory Marton.
+\newblock Quantitative evaluation of passage retrieval algorithms for question
+  answering.
+\newblock In {\em Proceedings of the 26th annual international ACM SIGIR
+  conference on Research and development in informaion retrieval}, pages
+  41--47. ACM, 2003.
+
+\bibitem{turian2010word}
+Joseph Turian, Lev Ratinov, and Yoshua Bengio.
+\newblock Word representations: a simple and general method for semi-supervised
+  learning.
+\newblock In {\em Proceedings of the 48th annual meeting of the association for
+  computational linguistics}, pages 384--394. Association for Computational
+  Linguistics, 2010.
+
+\bibitem{vilnis2014word}
+Luke Vilnis and Andrew McCallum.
+\newblock Word representations via gaussian embedding.
+\newblock {\em arXiv preprint arXiv:1412.6623}, 2014.
+
+\end{thebibliography}
