@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.5.14)  14 MAY 2016 22:56
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.5.14)  15 MAY 2016 10:23
 entering extended mode
 **main.tex
-(E:\Bachelor_thesis-master\main.tex
+(E:\Bachelor_thesis\main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (D:\CTEX\MiKTeX\tex\latex\base\article.cls
@@ -642,7 +642,7 @@ Package caption Info: sidecap package is loaded.
 LaTeX Warning: Unused global option(s):
     [13pt].
 
-(E:\Bachelor_thesis-master\main.aux)
+(E:\Bachelor_thesis\main.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
@@ -959,18 +959,19 @@ Overfull \hbox (13.51096pt too wide) in paragraph at lines 183--183
 [] 
  []
 
-[8] [9] [10]
-Overfull \hbox (61.53003pt too wide) in paragraph at lines 295--309
+[8]
+File: images/hypernym-hyponym.png Graphic file (type QTm)
+ <use  "images/hypernym-hyponym.png" > [9] [10] [11]
+Overfull \hbox (61.53003pt too wide) in paragraph at lines 302--316
  [] 
  []
 
-[11] (E:\Bachelor_thesis-master\main.bbl [12] [13]) [14]
-(E:\Bachelor_thesis-master\main.aux) ) 
+(E:\Bachelor_thesis\main.bbl [12] [13]) [14] (E:\Bachelor_thesis\main.aux) ) 
 Here is how much of TeX's memory you used:
- 17282 strings out of 430478
- 351249 string characters out of 3191502
- 370856 words of memory out of 3000000
- 20182 multiletter control sequences out of 15000+200000
+ 17285 strings out of 430478
+ 351279 string characters out of 3191502
+ 372856 words of memory out of 3000000
+ 20184 multiletter control sequences out of 15000+200000
  10240 words of font info for 72 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,14n,92p,836b,523s stack positions out of 5000i,500n,10000p,200000b,50000s

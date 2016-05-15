@@ -209,7 +209,14 @@ E(w,c)=\mathcal{D}_{KL}(w||c)
 \subsection{Hyper-Hypo Learning}
 All2Gauss相比于其他向量表示模型的最大不同在于，它自然引进了KL散度这一非对称的度量，能够学习一些通过偏序关系形成的层次结构，比如上下位关系、语义的继承关系（entailment）等。ICLR15的论文中，作者指出了该模型具有学习这种层次结构的能力，然而本文则想通过上下位词的学习试图说明原论文的模型学习的效果并不理想，并给出了改进方式和二者的对比实验。
 
-首先解释一下什么是上下位词（hypernym-hyponym）关系。在语言学中，下位词（hyponym）相对于上位词（hypernym），是一种is-a的关系。例如“狗是一种哺乳动物”、“西瓜是一种水果”，“狗”、“西瓜”相对于“哺乳动物”、“水果”是下位词，反之则是上位词。上下位词关系的引入对诸如问答系统、自然语言推断（natural language inference）等任务的效果具有很好的提升。
+首先解释一下什么是上下位词（hypernym-hyponym）关系。在语言学中，下位词（hyponym）相对于上位词（hypernym），是一种is-a的关系。例如“狗是一种哺乳动物”、“西瓜是一种水果”，“狗”、“西瓜”相对于“哺乳动物”、“水果”是下位词，反之则是上位词。(Figure\ \ref{fig:hyper})上下位词关系的引入对诸如问答系统、自然语言推断（natural language inference）等任务的效果具有很好的提升。
+
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{hypernym-hyponym.png}
+	\caption{上下位词的两个例子}
+	\centering
+	\label{fig:hyper}
+\end{figure}
 
 在ICLR15的原文中，作者采用KL散度的能量函数，将具有上下位关系的词对作为正样本，并通过分别对上位词和下位词位置进行负采样得到的词对作为负样本，采用和词表示学习同样的方式进行训练。其损失函数如下：
 \begin{align*}
