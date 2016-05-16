@@ -63,8 +63,10 @@ Luke Vilins等人在ICLR 2015中发表的Word Representation Via Gaussian Embedd
 
 然而囿于篇幅，Vilins等人的文章对于词分布的讨论并不是非常充分，除了他们在future work的环节提出的一些待探索的课题同时，也比较缺乏充分的实验探究。本文正是基于这些问题对词分布这一新颖的表示方式做更深入的讨论。本文的工作将分成三个部分。第一部分针对原文中对于“还有那些分布可以用于表示”尝试作出一些回答，并指出原文中作者设想的student's\ t分布并非是一个很好的选择。第二部分是对于词分布模型在词的相似度等实验上的表现，特别指出了一些超参数的选择会极大影响实验的结果。第三部分则针对原文作者提出的对于非对称关系学习的实验上的补充，并指出原文作者设想的学习这种关系的方法的效果不佳，最后给出自己的修改过的模型和学习策略。
 
-\section{Main part}
-\subsection{Theory}
+\section{理论分析}
+
+\subsection{模型介绍}
+
 我们将语料经过tokenize得到的一个词典记为$\mathcal{D}$,，其中的每一个单词记为$w$，自然有$w\in\mathcal{D}$
 。通过设定窗口(window)的大小(记为$i$)，对于语料中位置为$n$的词$w_n$，我们把$w_n-i,...,w_n-1,w_n+1,...,w_n+i$称
 作上下文词，把所有上下文词的几何记为$\mathcal{C}$，该集合中的每一个词记为$c$，显然$c\in\mathcal{C}$
@@ -84,7 +86,7 @@ E(w,c)=\sigma(w^{\prime{}}c)\cdot\prod_k\sigma(w^{\prime{}}c_N^k)
 为了很好的区分正样本和负样本，我们考虑引入排序损失函数(ranking loss function)。设$\mathcal{L}(w,c,c_n)=max(0,\varepsilon-E(w,c)+E(w,c_n))$,$\varepsilon$为正样
 本和负样本的一个边界(margin)。当$\varepsilon-E(w,c)+E(w,c_n)>0$即$E(w,c)-E(w,c_n)>m$时小损失函数，从而使得$E(w,c)$和$E(w,c_n)$的差值大于$\varepsilon$。
 
-同于以往以向量为基础的词分布表示，本文讨论的模型希望将词表示为一个特定的分布，因而分布的选取和能量函数的选择是一个重要的问题。Vilins等在ICLR15的文章中，分别选择了高斯分布以及概率乘积核(probability product kernel)和KL散度(Kullback-Leibler divergence)进行建模（以下分别简称为IP能量函数和KL能量函数）。
+相对于以往以向量为基础的词分布表示，本文讨论的模型希望将词表示为一个特定的分布，因而需要选取适合与计算分布间的能量函数。Vilins等在ICLR15的文章中，选择了概率乘积核(probability product kernel)和KL散度(Kullback-Leibler divergence)进行建模(以下分别简称为IP能量函数和KL能量函数)。IP能量函数在所有连续分布构成的$\mathcal{L}^2$空间中相当于内积，而KL能量函数则是信息论中常用的度量。下面以高斯分布为例进行说明。
 
 对任何一个词$w$，用一个高斯分布$\mathcal{N}(\mu_w,\Sigma_w)$进行表示。对于IP能量函数，有：
 \begin{align*}
@@ -96,9 +98,12 @@ E(w,c)&=D_KL(\mathcal{N}_w||\mathcal{N}_c)\\
 E(w,c)&=D_KL(\mathcal{N}_w||\mathcal{N}_c)\\
 &=\frac{1}{2}(tr(\Sigma_c^{-1}\Sigma_w)+(\mu_c-\mu_w)^{\prime{}}\Sigma_c^{-1}(\mu_c-\mu_w))-d+ln(\frac{det(\Sigma_c)}{det(\Sigma_w)})
 \end{align*}
-其中$d$为$\mu$的维度。可以看到由于高斯分布良好的性质，两种能量函数都能够得到封闭解(close form)。那么是否存在其他良好的分布函数，适合用作词的向量表示？Vilins在其ICLR15的工作的future work一节曾经提到过可以尝试使用其他分布进行尝试，比如Student’s t。为此我们将针对一些常见的分布进行讨论，
-特别要提出的是，分布的选择，以及能量函数的选择对于词的表示效果的影响是比较难以预测的。
-处于实用性而言我们更倾向与选择易于计算的组合，但理论上的一些讨论依然是值得尝试的事情。
+其中$d$为设定的词分布的的维度。当选取的高斯分布具有一些特殊的条件，诸如协方差矩阵为对角矩阵时，上述两个能量函数还可以得到进一步简化。
+
+\subsection{分布的选取}
+
+从上面的推导可以看到，由于高斯分布良好的性质，两种能量函数都能够得到封闭解(close form)。那么是否存在其他良好的分布函数，适合用作词的向量表示？Vilins在其ICLR15的工作的future work一节曾经提到过可以尝试使用其他分布进行尝试，比如Student’s\ t，然而并没有给出相应的结论，为此我们将针对一些常见的分布进行讨论。
+特别要提出的是，分布的选择，以及能量函数的选择对于词的表示效果的影响是比较难以预测的，对于具体选择那种分布，本文更倾向与将易于计算摆在优先考虑的位置，因而具有解析形式的密度函数的一类分布是较优的选择。
 
 首先我们讨论一般椭圆分布(general elliptical distribution)的情况。我们采取\cite{gomez2003survey}中给出的定义，只考虑一类具有解析形式的密度函数的椭圆分布。设$E(\mu,\Sigma,g)$为椭圆分布，且具有密度函数$f(x)$如下：
 \begin{align*}
@@ -124,8 +129,9 @@ g_1\otimes g_2(x)&= \int_{-\infty}^{\infty} g_1(t)g_2(x-t)dt \\
 g_1\otimes g_2(0)&= \int_{-\infty}^{\infty} g_1(t)g_2(-t)dt   
 \end{align*}
 结合(1)(2)，我们可以把求积分的解析解转化为求函数卷积的解析解。
-对于高斯分布而言，考虑到其在卷积下的不变性质（两个高斯分布的卷积依然是高斯分布），可以通过提取高斯核的技巧求解出解析解。然而对于一般的椭圆分布而言，这一点很难得到保证（常见的另一个性质优良的---线性核由于$g$的可积性并不可取）。
-以原文章中提到的Student's T分布为例，其$g(t)=(1+\frac{x^2}{v})^{-\frac{v+1}{2}}$。关于t分布的卷积计算
+对于高斯分布而言，考虑到其在卷积下的不变性质(两个高斯分布的卷积依然是高斯分布)，可以通过提取高斯核的技巧求解出解析解。然而对于一般的椭圆分布而言，$g$的选择在可积性的约束下并不能很好的保证其卷积的情况。
+
+以原文章中提到的Student's\ t分布为例，其$g(t)=(1+\frac{x^2}{v})^{-\frac{v+1}{2}}$。关于t分布的卷积计算
 \cite{nadarajah2005convolutions}给出了一个可用的结论：当$v_1$和$v_2$皆为奇数时存在解析解，否则不存在解析解。此外，选取t分布作为模型中对词的表示还会引起IP能量函数
 的导数难以求解，提高了模型训练的难度，因而高斯分布可以说是一个非常好的选择。
 
@@ -138,14 +144,16 @@ p_{\theta}(x)=exp(\mathcal{A}(x)+\theta^{\prime{}}\mathcal{T}(x)-\mathcal{K}(\th
 k(x,x^{\prime{}})=\int_x p_\theta(x)^{\gamma} p_{\theta^{\prime{}}}(x)^{\gamma}dx
 \end{align*}
 当$\gamma=1$(probability product kernel)时，只有$\mathcal{A}$和$\mathcal{T}$满足某些特殊的形式
-时才具有闭式解。然而当$\gamma=\frac{1}{2}$时，总能写成如下形式的闭式解：
+时才具有闭式解。
+
+然而当$\gamma=\frac{1}{2}$时，$k(x,x^{\prime{}})$总能写成如下形式的闭式解：
 \begin{align*}
 k(x,x^{\prime{}})&=\int_x p_\theta(x)^{\frac{1}{2}} p_{\theta^{\prime{}}}(x)^{\frac{1}{2}}dx \\
 &=\int_x exp(\mathcal{A}(x)+(\frac{\theta}{2}+\frac{\theta^{\prime{}}}{2})^{\rm T}\mathcal{T}(x)-\frac{1}{2}\mathcal{K}(\theta)-\frac{1}{2}\mathcal{K}(\theta^{\prime{}})) \\
 &=exp(\mathcal{K}(\frac{\theta}{2}+\frac{\theta^{\prime{}}}{2})-\frac{1}{2}\mathcal{K}(\theta)-\frac{1}{2}\mathcal{K}(\theta)-\frac{1}{2}\mathcal{K}(\theta^{\prime{}})) 
 \end{align*}
 对于$\gamma=\frac{1}{2}$时，$k(x,x^{\prime{}})$被称作巴特查里亚距离（Bhattacharyya distance）。巴氏距离同样
-可以表示两个分布的相似程度，其与IP能量函数孰优孰劣本文不做展开讨论。
+可以表示两个分布的相似程度，在合适的$\mathcal{K}$的选择下我们依然能够的到易于计算的能量函数，至于其与IP能量函数孰优孰劣本文不做展开讨论。
 
 \cite{jordan2003introduction}对于指数族分布的KL散度的计算做出了讨论：
 \begin{align*}
@@ -155,17 +163,11 @@ D(p \parallel p^{\prime{}}) &= E_p log \frac{p}{p_{\prime{}}} \\
 \end{align*}
 其中$\mu = E_p (\mathcal{T}(x))$。由此可见指数族分布在采取巴氏距离的情况下，能量函数有稳定的解析解。对于指数族分布是否适合作为词分布表示，是值得进一步探究的地方。
 
-为了训练的方便，以及专注于讨论模型在具体任务上的问题，本文统一采用高斯分布用作表示，并简称该模型为All2Gauss以便叙述。
+为了训练的方便，以及专注于讨论模型在具体任务上的问题，本文沿袭前文的做法，统一采用高斯分布作为表示。
 
-\subsection{Word Representation Learning}
-获得词表示最普遍的做法，是根据语义的上下文假设，本质上是用词对的共现频率作为特征的训练手段。
-在自然语言处理的工作中，高质标注数据集的稀缺一直是提高模型性能的一个瓶颈，而这种无监督的训练
-方法则可以充分利用互联网产生的大量文本信息，利用海量数据获得良好的训练效果。
+\section{词表示学习}
 
-适用于词分布的训练的数据集有很多，常用语料库，英文的有维基百科（Wikipedia）、华盛顿邮报（WSJ）、推特（Twitter）等，中文的则有人民日报、微博等。本文采取
-维基英文百科三月份的镜像进行训练（共计13g）。
-
-\subsubsection{Train}
+\subsection{学习过程}
 根据前面一节的分析，我们采用高斯分布用作词分布的表示，同时为了减少参数的存储空间，我们选择
 协方差矩阵为对角矩阵的一类高斯分布，但当协方差矩阵具有别的一些良好性质，尤其是存在一些低阶的
 分解的时候也同样适用，这里就不在进一步讨论。
@@ -201,12 +203,42 @@ E(w,c)=\mathcal{D}_{KL}(w||c)
 
 此外还有一些训练中的细节需要注意：为了防止词分布的均值，协方差的数字过大和过小，需要对其作出一些正则化约束。
 比如对于协方差而言，可以设定两个超参数$c$，$\mathcal{C}$，使得$\Sigma$满足$cI<\Sigma<\mathcal{C} I$（$A>B$表示$A-B$是正定矩阵）；
-对于KL散度这种非对称的能量函数，在进行negative sampling的时候需要分别对两个位置进行。
+对于KL散度这种非对称的能量函数，在进行negative sampling的时候需要分别对两个位置进行等。
 
-相比ICLR15年的工作，本文特别要强调的是，关于协方差矩阵的范围（这里相当于$\Sigma$的最大、最小特征值）的选取，是非常影响结果的，
-而原先的工作缺少对于这些超参数关注，在后面的实验中会特地进行讨论。
-\subsubsection{experiment}
-\subsection{Hyper-Hypo Learning}
+相比前文的工作，本文特别要强调的是，关于协方差矩阵的范围(这里相当于$\Sigma$的最大、最小特征值)的选取，是非常影响结果的，
+并在后面的实验评价一节中会特地进行讨论。
+
+\subsection{实验设置}
+获得词表示最普遍的做法，是根据语义的上下文假设，本质上是用词对的共现频率作为特征的训练手段。
+在自然语言处理的工作中，高质标注数据集的稀缺一直是提高模型性能的一个瓶颈，而这种无监督的训练
+方法则可以充分利用互联网产生的大量文本信息，利用海量数据获得良好的训练效果。
+
+适用于词分布的训练的数据集有很多，常用语料库，英文的有维基百科（Wikipedia）、华盛顿邮报（WSJ）、推特（Twitter）等，中文的则有人民日报、微博等。本文采取维基英文百科三月份的镜像进行训练\footnote{可以从https://dumps.wikimedia.org/处下载维基百科各时间点的镜像文件}，选择维基百科中出现词频高于100的单词并去除掉停用词(Stop Words)作为模型中的字典。训练采用了seomoz在github上公开的代码并加以修改。\footnote{https://github.com/seomoz/word2gauss/}
+
+\subsection{结果及分析}
+
+\begin{center}
+\captionof{table}{hihi}
+\begin{tabular}{| c | c |}
+\hline
+\textbf{Query Word(metric)} & \textbf{Neighborhood Words} \\
+\hline
+math(IP) & mathematics, psychology, physics, sociology, chemistry \\
+\hline
+math(cosine) & algebra, arithmetic, calculus, mathematics, coursework \\
+\hline
+google(IP) & internet, youtube, hardware, application, iso \\
+\hline
+goole(cosine) & online, internet, microsoft, facebook, yahoo \\
+\hline
+tsunami(IP) & earthquake, cyclone, landside, flood, storm \\
+\hline
+tsunami(cosine) & cyclone, earthquake, disaster, flood, volcano \\
+\hline 
+\end{tabular}
+\end{center}
+
+\section{上下位关系的学习}
 All2Gauss相比于其他向量表示模型的最大不同在于，它自然引进了KL散度这一非对称的度量，能够学习一些通过偏序关系形成的层次结构，比如上下位关系、语义的继承关系（entailment）等。ICLR15的论文中，作者指出了该模型具有学习这种层次结构的能力，然而本文则想通过上下位词的学习试图说明原论文的模型学习的效果并不理想，并给出了改进方式和二者的对比实验。
 
 首先解释一下什么是上下位词（hypernym-hyponym）关系。在语言学中，下位词（hyponym）相对于上位词（hypernym），是一种is-a的关系。例如“狗是一种哺乳动物”、“西瓜是一种水果”，“狗”、“西瓜”相对于“哺乳动物”、“水果”是下位词，反之则是上位词。(Figure\ \ref{fig:hyper})上下位词关系的引入对诸如问答系统、自然语言推断（natural language inference）等任务的效果具有很好的提升。
@@ -243,7 +275,7 @@ Loss(v_{hyper},v_{hypo}) &= max \{0, \varepsilon - D_{KL}(v_{hyper} || v_{hypo})
 \end{align*}
 在沿用原模型损失函数的基础上，我们新添加了一个对负样本的正则项和边际，来避免前面b)中出现的问题。这个损失函数同样反映了我们新的判别标准：对于词对$(w_a,w_b)$当$D_{KL}(w_a||w_b)-D_{KL}(w_b||w_a) > \theta$时，认为$w_a \preceq w_b$；当$|D_{KL}(w_a||w_b)-D_{KL}(w_b||w_a) < \theta|$时认为$w_a$和$w_b$无上下位关系。这里的$\theta$同样需要通过交叉验证来选取，不过一般情况下会大于训练时的$\varepsilon$，这一点在后面的实验中会进行讨论。
 \end{enumerate}
-\subsubsection{Experiment Implementation}
+\subsection{Experiment Implementation}
 关于上下位词关系最常用的语料库是WordNet。WordNet是一个英语词汇数据库（lexical database）。区别与常见的词典，WordNet将所有的单词聚成一个同义词集合（synsets）来表示一个共同的语义。为了方便的获得训练集和测试集，本文采用了NLTK的wordNet Interface，获得了所有上下位词关系的传递闭包（transitive closures），共计698587个正样本词对，按一定比例获得训练集和测试集中的正样本，负样本则按照负采样的方法生成。我们这里不对分布的具体选取做出讨论，因此选取均值的维数为50，协方差矩阵为对角型矩阵，迭代次数会在随后的结果中指明，负采样个数统一设定为5。训练集和测试集中正样本的比例为4:1，测试集正负样本比例为1：1
 \begin{enumerate}[label=\Roman*.]
 	\item 边际$\varepsilon$、$\varepsilon^{'}$的选取对于结果的影响
