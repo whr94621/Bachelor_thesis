@@ -1,9 +1,11 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2016.5.14)  14 MAY 2016 20:48
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.4)  19 MAY 2016 16:04
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **cover.tex
-(E:\Bachelor_thesis-master\bthesis\body\cover.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for loaded.
+(./cover.tex
+LaTeX2e <2016/03/31>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 Invalid UTF-8 byte or sequence at line 2 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 2 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 2 replaced by U+FFFD.
@@ -1515,11 +1517,11 @@ and I'll forget about whatever was undefined.
 
  
 Here is how much of TeX's memory you used:
- 7 strings out of 430478
- 104 string characters out of 3191502
- 45928 words of memory out of 3000000
- 3237 multiletter control sequences out of 15000+200000
- 3640 words of font info for 14 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 18i,1n,12p,117b,58s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 6 strings out of 493632
+ 62 string characters out of 6144723
+ 53617 words of memory out of 5000000
+ 3513 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 18i,1n,12p,117b,58s stack positions out of 5000i,500n,10000p,200000b,80000s
 No pages of output.
