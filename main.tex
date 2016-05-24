@@ -15,8 +15,8 @@
 \usepackage{tocloft}
 \captionsetup{font=footnotesize}
 \usepackage{setspace}
-
-
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
 
 
@@ -84,7 +84,7 @@ Luke Vilins等人在ICLR 2015中发表的Word Representation Via Gaussian Embedd
 
 \subsection{模型介绍}
 
-我们将语料经过tokenize得到的一个词典记为$\mathcal{D}$,，其中的每一个单词记为$w$，自然有$w\in\mathcal{D}$
+我们将语料经过tokenize得到的一个词典记为$\mathcal{D}$，其中的每一个单词记为$w$，自然有$w\in\mathcal{D}$
 。通过设定窗口(window)的大小(记为$i$)，对于语料中位置为$n$的词$w_n$，我们把$w_n-i,...,w_n-1,w_n+1,...,w_n+i$称
 作上下文词，把所有上下文词的几何记为$\mathcal{C}$，该集合中的每一个词记为$c$，显然$c\in\mathcal{C}$
 。一般情况下，我们有$\mathcal{C}\subseteq\mathcal{D}$。对于下文中关于单词和上下文词的表示，我们同样分别以
@@ -236,17 +236,17 @@ E(w,c)=\mathcal{D}_{KL}(w||c)
 
 
 
-\paragraph{模型及超参数的选择}
+\paragraph{模型设置}
 
 为了控制实验参数的规模，本文的实验只保留语料中出现次数大于等于500的单词，并且去除停用词(Stop Words)。基于便于计算的考虑，统一采用对角型协方差矩阵，表示的维度$d$选择为50， 详细的超参数见下表：
 \begin{center}
 \begin{tabular}{| l | c |}
 \hline
-initial learning rate & 0.1 \\
-margin\footnote{\wuhao margin用于区分正样本和负样本} & 0.1 \\
-Negative Sampling number & 5 \\
-context window size & 5 \\
-iteration & 5 \\
+\bf initial learning rate & 0.1 \\
+\bf margin\footnote{\wuhao margin用于区分正样本和负样本} & 0.1 \\
+\bf Negative Sampling number & 5 \\
+\bf context window size & 5 \\
+\bf iteration & 5 \\
 \hline
 \end{tabular}
 \captionof{table}{\wuhao 词表示实验的超参数设置}
@@ -297,6 +297,33 @@ SimLex-999 & 29.39 & 27.59 & 20.91 \\
 \end{tabular}
 \captionof{table}{\wuhao 词相似度测评的结果。SG代表Skip-Gram模型，GR(Gaussian Representation)代表本文中的模型。50d表示维度为50.cos与IP分别指cosine函数和IP能量函数，从数据上看IP能量函数表现词相似度的能力相对较弱}
 \label{tab:sim}
+\end{center}
+
+\paragraph{超参数的选取}之前的工作中提到词分布表示模型对于一些超参数非常敏感，尤其是协方差的上下界的选取，然而并没有给出相应的实验和取值策略。本文针对这一问题给出了一组实验,其结果见表\ref{tab:sigma}
+
+从结果中看，$\sigma_{min}$取0.5，$\sigma_{max}$取1.0是唯一的同时在大小语料下皆表现出良好效果的选择，其余的实验并不能总结出一个比较好的调参策略。从理论上说，当$\sigma_{min}$和$\sigma_{max}$非常接近时，词分布表示退化成词向量表示，而IP与cosine两种度量的方式应当趋同，当然这样便失去了词分布表示的意义。我们认为这可能是这一表示模型的一个缺点。
+\newpage
+\begin{center}
+\begin{tabular}{| l | l | l | c | c |}
+\hline
+\bf $\sigma_{min}$ & \bf $\sigma_{max}$ & \bf vocab & \bf similarity(cosine) & \bf similarity(IP) \\
+\hline
+0.5 & 1.0 & 114186 & \bf 0.581* & \bf 0.437* \\
+\hline
+0.6 & 1.0 & 114186 & 0.503 & 0.203\\
+\hline  
+0.7 & 1.0 & 114186 & 0.618 & 0.161 \\
+\hline
+0.5 & 1.0 & 64617 & 0.544 & 0.385 \\
+\hline
+0.5 & 1.5 & 64617 & 0.203 & 0.159 \\
+\hline
+0.3 & 1.2 & 64617 & 0.448 & 0.206 \\
+\hline
+\end{tabular}
+\captionof{table}{\wuhao 
+关于$\sigma$的上下界选取对于词义相似度的影响，其中$\mu_{max}=4.0$，我们反复的实验一些组合，只有一组得到了较好的结果，可见这组参数的选取对于实验结果的影响是巨大的}
+\label{tab:sigma}
 \end{center}
 
 \section{上下位关系的学习}
@@ -354,7 +381,7 @@ Loss(v_{hyper},v_{hypo}) &= max \{0, \varepsilon - D_{KL}(v_{hyper} || v_{hypo})
 \begin{center}
 \begin{tabular}{| c | c | c | c |}
 	\hline
-	$\varepsilon$,$\varepsilon^{'}$ & Precision & Recall & Accuracy \\
+	\bf $\varepsilon$,$\varepsilon^{'}$ & \bf Precision & \bf Recall & \bf Accuracy \\
 	\hline
 	5,0.3 & 0.81720 & 0.78560 & 0.80493 \\
 	\hline
@@ -381,7 +408,7 @@ Loss(v_{hyper},v_{hypo}) &= max \{0, \varepsilon - D_{KL}(v_{hyper} || v_{hypo})
 \begin{center}
 \begin{tabular}{| l | l | l | l |}
 	\hline
-	iterations & Precision & Recall & Accuracy \\
+	\bf iterations & \bf Precision & \bf Recall & \bf Accuracy \\
 	\hline
 	3 & 0.71980 & 0.85908 & 0.76233 \\
 	\hline
@@ -405,7 +432,7 @@ Loss(v_{hyper},v_{hypo}) &= max \{0, \varepsilon - D_{KL}(v_{hyper} || v_{hypo})
 \begin{center}
 \begin{tabular}{| c | c | c | c | c | c | c |}
 	\hline
-	Implementation & \multicolumn{3}{| c |}{Original} & \multicolumn{3}{| c |}{Modified} \\ \cline{2-7}
+	\bf Implementation & \multicolumn{3}{| c |}{\bf Original} & \multicolumn{3}{| c |}{\bf Modified} \\ \cline{2-7}
 	($\varepsilon$,$\theta$,iterations) & Precision & Recall & Accuracy & Precision & Recall & Accuracy \\ 
 	\hline
 	5,3,10 & 0.63007 & 0.94993 & 0.69610 & 0.73033 & 0.87629 & \textbf{0.77636*} \\

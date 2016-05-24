@@ -6,56 +6,59 @@
 \citation{socher2011parsing}
 \citation{lund1996producing}
 \citation{lebret2013word}
+\citation{bengio2006neural}
 \@writefile{toc}{\contentsline {section}{\numberline {1}基本介绍}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}什么是词嵌入}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2}之前的工作}{2}}
-\citation{bengio2006neural}
 \citation{mikolov2013efficient}
 \citation{pennington2014glove}
 \citation{shazeer2016swivel}
 \citation{levy2014neural}
 \citation{levy2015improving}
+\citation{vilnis2014word}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  CBOW模型和skip-gram模型的大致框架\relax }}{4}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:w2v}{{1}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}本文的工作}{5}}
-\citation{vilnis2014word}
-\newlabel{SC@1}{{\caption@xref {??}{ on input line 79}}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  词分布的示意图。这里选取的是选择高斯分布对词进行表示的情况。本图表现出了这种表示的两个特点：具有相近词义的分布的均值比较接近；词频较大和词义较宽泛的协方差较大。\relax }}{6}}
-\newlabel{fig:w2d}{{2}{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {2}理论分析}{7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}模型介绍}{7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}分布的选取}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}本文的工作}{4}}
+\newlabel{SC@1}{{\caption@xref {??}{ on input line 79}}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  词分布的示意图。这里选取的是选择高斯分布对词进行表示的情况。本图表现出了这种表示的两个特点：具有相近词义的分布的均值比较接近；词频较大和词义较宽泛的协方差较大。\relax }}{5}}
+\newlabel{fig:w2d}{{2}{5}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}理论分析}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}模型介绍}{5}}
 \citation{gomez2003survey}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}分布的选取}{7}}
 \citation{nadarajah2005convolutions}
 \citation{jebara2004probability}
 \citation{jordan2003introduction}
-\@writefile{toc}{\contentsline {section}{\numberline {3}词表示学习}{13}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}学习过程}{13}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}实验设置}{15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}结果及分析}{15}}
-\@writefile{toc}{\contentsline {paragraph}{模型及超参数的选择}{15}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  词表示实验的超参数设置\relax }}{16}}
-\newlabel{tab:hy}{{1}{16}}
-\@writefile{toc}{\contentsline {paragraph}{两种度量得到的结果}{16}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  词分布表示在两种度量下得到的临近词的结果，其中IP表示用IP能量函数计算相似度，cosine表示用余弦函数只计算均值的相似度。IP能量函数得到的结果按照协方差矩阵的行列式由高到低排列。\relax }}{16}}
-\@writefile{toc}{\contentsline {paragraph}{词义相似度评价}{17}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  词相似度测评的结果。SG代表Skip-Gram模型，GR(Gaussian Representation)代表本文中的模型。50d表示维度为50.cos与IP分别指cosine函数和IP能量函数，从数据上看IP能量函数表现词相似度的能力相对较弱\relax }}{17}}
-\newlabel{tab:sim}{{3}{17}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}上下位关系的学习}{18}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}学习过程}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}词表示学习}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}学习过程}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}实验设置}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}结果及分析}{12}}
+\@writefile{toc}{\contentsline {paragraph}{模型设置}{12}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  词表示实验的超参数设置\relax }}{12}}
+\newlabel{tab:hy}{{1}{12}}
+\@writefile{toc}{\contentsline {paragraph}{两种度量得到的结果}{12}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  词分布表示在两种度量下得到的临近词的结果，其中IP表示用IP能量函数计算相似度，cosine表示用余弦函数只计算均值的相似度。IP能量函数得到的结果按照协方差矩阵的行列式由高到低排列。\relax }}{12}}
+\@writefile{toc}{\contentsline {paragraph}{词义相似度评价}{13}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  词相似度测评的结果。SG代表Skip-Gram模型，GR(Gaussian Representation)代表本文中的模型。50d表示维度为50.cos与IP分别指cosine函数和IP能量函数，从数据上看IP能量函数表现词相似度的能力相对较弱\relax }}{13}}
+\newlabel{tab:sim}{{3}{13}}
+\@writefile{toc}{\contentsline {paragraph}{超参数的选取}{13}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  关于$\sigma $的上下界选取对于词义相似度的影响，其中$\mu _{max}=4.0$，我们反复的实验一些组合，只有一组得到了较好的结果，可见这组参数的选取对于实验结果的影响是巨大的\relax }}{14}}
+\newlabel{tab:sigma}{{4}{14}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}上下位关系的学习}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}学习过程}{14}}
 \citation{he2015learning}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  上下位词的两个例子\relax }}{19}}
-\newlabel{fig:hyper}{{3}{19}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}实验设置}{21}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}结果及分析}{22}}
-\@writefile{toc}{\contentsline {paragraph}{边际 $\varepsilon $ 、$\varepsilon ^{'}$的选取对于结果的影响}{22}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  两种margin的选择对于结果的影响\relax }}{22}}
-\@writefile{toc}{\contentsline {paragraph}{迭代次数对实验的影响}{23}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  迭代次数对结果的影响\relax }}{23}}
-\@writefile{toc}{\contentsline {paragraph}{两种模型的对照实验}{23}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  模型对比实验\relax }}{24}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}结论和展望}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  上下位词的两个例子\relax }}{15}}
+\newlabel{fig:hyper}{{3}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}实验设置}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}结果及分析}{17}}
+\@writefile{toc}{\contentsline {paragraph}{边际 $\varepsilon $ 、$\varepsilon ^{'}$的选取对于结果的影响}{17}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  两种margin的选择对于结果的影响\relax }}{17}}
+\@writefile{toc}{\contentsline {paragraph}{迭代次数对实验的影响}{18}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  迭代次数对结果的影响\relax }}{18}}
+\@writefile{toc}{\contentsline {paragraph}{两种模型的对照实验}{18}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces \fontsize  {10.5pt}{\baselineskip }\selectfont  模型对比实验\relax }}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}结论和展望}{19}}
 \bibstyle{plain}
 \bibdata{MyBib}
 \bibcite{bengio2006neural}{1}

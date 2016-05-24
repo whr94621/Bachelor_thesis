@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.4)  20 MAY 2016 09:28
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.5.4)  24 MAY 2016 11:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1299,6 +1299,33 @@ Package tocloft Info: The document has section divisions on input line 44.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count160
+\Gm@cntv=\count161
+\c@Gm@tempcnt=\count162
+\Gm@bindingoffset=\dimen273
+\Gm@wd@mp=\dimen274
+\Gm@odd@mp=\dimen275
+\Gm@even@mp=\dimen276
+\Gm@layoutwidth=\dimen277
+\Gm@layoutheight=\dimen278
+\Gm@layouthoffset=\dimen279
+\Gm@layoutvoffset=\dimen280
+\Gm@dimlist=\toks25
+)
 (./chinese_font.tex)
 
 LaTeX Warning: Unused global option(s):
@@ -1409,10 +1436,44 @@ Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (./content.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(./content.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 4.
@@ -1425,58 +1486,40 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Calculating math sizes for size <12.1> on input line 49.
 File: images/aaa.jpg Graphic file (type QTm)
 
-<use  "images/aaa.jpg" > [3] [4] [5]
+<use  "images/aaa.jpg" >
+Overfull \hbox (16.98825pt too wide) in paragraph at lines 56--64
+[]\EU1/lmr/m/n/12.1 2013 \EU1/FandolSong-Regular(0)/m/n/12.1 年 \EU1/lmr/m/n/12.
+1 Thomas Mikolov \EU1/FandolSong-Regular(0)/m/n/12.1 提 出 了 一 个 更 为 简 单 迅 速 的 训 
+练 词 向 量 的 框 架 \EU1/lmr/m/n/12.1 Word2Vec[[]],
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3] [4]
 File: images/word2gauss_illustrate.png Graphic file (type QTm)
-
-<use  "images/word2gauss_illustrate.png" > [6] [7]
-Overfull \hbox (18.5135pt too wide) in paragraph at lines 112--112
-[] 
+ <use  "images/word2gauss_illustrate.png" > [5] [6] [7] [8] [9] [10]
+Overfull \hbox (1.25282pt too wide) in paragraph at lines 233--234
+[]\EU1/FandolSong-Regular(0)/m/n/12.1 适 用 于 词 分 布 的 训 练 的 数 据 集 有 很 多，|  常 用 语 
+料 库，|  英 文 的 有 维 基 百 科  |（\EU1/lmr/m/n/12.1 Wikipedia\EU1/FandolSong-Regular(0)
+/m/n/12.1 ）、|
  []
 
-[8]
-Overfull \hbox (18.5135pt too wide) in paragraph at lines 117--117
-[] 
- []
-
-[9] [10] [11] [12]
-Overfull \hbox (75.34296pt too wide) in paragraph at lines 202--202
-[] 
- []
-
-[13] [14] [15]
-Overfull \hbox (85.9232pt too wide) in paragraph at lines 259--276
- [] 
- []
-
-[16] [17]
+[11] [12] [13]
+LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 325.
 File: images/hypernym-hyponym.png Graphic file (type QTm)
  <use  "images/hypernym-hyponym.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (51.89577pt too wide) in paragraph at lines 323--323
-[] 
- []
-
-[18] [19]
-Overfull \hbox (27.06523pt too wide) in paragraph at lines 339--339
-[] 
- []
-
-[20] [21] [22]
-Overfull \hbox (91.4732pt too wide) in paragraph at lines 406--420
- [] 
- []
-
-[23] [24] [25] (./main.bbl [26]) [27] (./main.aux) ) 
+[14] [15] [16] [17] [18] [19] (./main.bbl [20]) [21] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 22745 strings out of 493632
- 460690 string characters out of 6144723
- 431391 words of memory out of 5000000
- 25895 multiletter control sequences out of 15000+600000
- 13084 words of font info for 88 fonts, out of 8000000 for 9000
+ 23258 strings out of 493632
+ 468397 string characters out of 6144723
+ 445726 words of memory out of 5000000
+ 26393 multiletter control sequences out of 15000+600000
+ 17744 words of font info for 108 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 65i,14n,77p,10430b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,14n,77p,10430b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (27 pages).
+Output written on main.pdf (21 pages).
